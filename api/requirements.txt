@@ -1,0 +1,10 @@
+torch
+torchvision
+flask
+pillow
+numpy
+scikit-learn
+matplotlib
+seaborn
+zipfile
+PIL
