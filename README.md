@@ -68,7 +68,7 @@ this shows that application runs correctly.
 Then open `Postman`, go to **Get data** and choose _POST_.
 Now insert http://127.0.0.1:5000/predict if you want to make a prediction just on 1 image.
 Or insert http://127.0.0.1:5000/predict_batch if you want to make a prediction on group of images.
-Finally go to _Body_ and load an image or a group of images and click **Send**
+Finally go to _Body_, choose _from-data_ and load an image or a group of images and click **Send**
 That's it! You will see the prediction in the bottom.<br>
 If you loaded a ZIP file with group of images you should get:
 ``` command line
@@ -80,6 +80,10 @@ If you loaded a ZIP file with group of images you should get:
 }
 ```
 Where you will see the name of an image and the prediction next to it.
+
+> [!CAUTION]
+> When loading an image always use _image_ as a key name, then choose _file_
+> When loading a group of images always use _file_ as a key name, then choose _file_
 
 ## Authors
 
