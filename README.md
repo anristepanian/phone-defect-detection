@@ -9,3 +9,32 @@ An online shopping platform for sustainable products is growing rapidly. Despite
 - The imperative programming was used to create the phone defect detection model and the Flask API.
 - `PyTorch` framework was used in order to build and train the ML model.
 - `Flask` framework was used in order to create a REST API.
+- ...
+
+## User Actions
+
+...
+
+## Future Enhancments
+
+...
+
+## Installation
+
+```commandline
+pip install -r requirements.txt
+```
+
+## Usage
+
+Start
+
+```commandline
+python code/main.py
+```
+
+and ...
+
+## Authors
+
+The project was developed by [Anri Stepanian](https://github.com/anristepanian)
