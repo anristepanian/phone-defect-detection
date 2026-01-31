@@ -25,7 +25,7 @@ When passed a photo (.jpg, .jpeg, .png) or a ZIP file containing photos of phone
    - Visible scratches on the screen, body, or camera lens.
    - Indicates physical wear or damage.
 4. Stain
-   - dead or stuck pixel clusters on the screen
+   - Dead or stuck pixel clusters on the screen
 
 ## User Actions
 
