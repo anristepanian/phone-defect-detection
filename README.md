@@ -14,7 +14,7 @@ An online shopping platform for smartphones is growing rapidly. Despite the desi
 
 ## ML Model
 
-When passed a photo (.jpg, .jpeg, .png) or a ZIP file containing photos of phones, the model categorizes them into next 4 ctegories:
+When passed a photo (.jpg, .jpeg, .png) or a ZIP file containing photos of phones, the model categorizes them into next 4 categories:
 1. Good
    - The phone is in acceptable condition.
    - No visible defects or only negligible ones.
