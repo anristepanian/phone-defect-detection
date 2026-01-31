@@ -36,9 +36,11 @@ When passed a photo (.jpg, .jpeg, .png) or a ZIP file containing photos of phone
 - The dataset size should be increased. Because of small size of a training dataset, the phone defect detection model is still inaccurate. The system often misclassifies images uploaded by users.
 - CT (continious training) pipeline should be implemented in order to automatically renew the training of the machine learning model over time.
 - Add confidence & uncertanity + explainability & defect localization. For instance, the output should look like:
+  ``` Command line
   Prediction: "Scratch"
   Confidence: 87%
   "Model predicted scratch because it focused on the top left corner of the phone"
+  ```
 - Web UI. Develop a simple and interactive Web UI instead of using apps like `Postman`.
 - Mobile deployment (Android, IOS, etc.).
 - Anomaly detection. If there are multiple defects on one image, or perhaps there is a defect which is not in the category.
@@ -57,7 +59,26 @@ Start
 python api/app.py
 ```
 
-and ...
+then open any browser and paste http://127.0.0.1:5000/health, you should see next:
+``` command line
+{"status":"ok"}
+```
+this shows that application runs correctly.
+Then open `Postman`, go to **Get data** and choose _POST_.
+Now insert http://127.0.0.1:5000/predict if you want to make a prediction just on 1 image.
+Or insert http://127.0.0.1:5000/predict_batch if you want to make a prediction on group of images.
+Finally go to _Body_ and load an image or a group of images and click **Send**
+That's it! You will see the prediction in the bottom.<br>
+If you loaded a ZIP file with group of images you should get:
+``` command line
+{
+    "1.jpg": "stain",
+    "2.jpg": "oil",
+    "3.jpg": "oil",
+    "4.jpg": "oil"
+}
+```
+Where you will see the name of an image and the prediction next to it.
 
 ## Authors
 
