@@ -33,17 +33,18 @@ When passed a photo (.jpg, .jpeg, .png) or a ZIP file containing photos of phone
 
 ## Future Enhancements
 
-- The dataset size should be increased. Because of small size of a training dataset, the phone defect detection model is still inaccurate. The system often misclassifies images uploaded by users.
-- CT (continious training) pipeline should be implemented in order to automatically renew the training of the machine learning model over time.
-- Add confidence & uncertanity + explainability & defect localization. For instance, the output should look like:
+- [x] Implement a CI/CD pipeline.
+- [ ] The dataset size should be increased. Because of small size of a training dataset, the phone defect detection model is still inaccurate. The system often misclassifies images uploaded by users.
+- [ ] CT (continious training) pipeline should be implemented in order to automatically renew the training of the machine learning model over time.
+- [ ] Add confidence & uncertanity + explainability & defect localization. For instance, the output should look like:
   ``` Command line
   Prediction: "Scratch"
   Confidence: 87%
   "Model predicted scratch because it focused on the top left corner of the phone"
   ```
-- Web UI. Develop a simple and interactive Web UI instead of using apps like `Postman`.
-- Mobile deployment (Android, IOS, etc.).
-- Anomaly detection. If there are multiple defects on one image, or perhaps there is a defect which is not in the category.
+- [ ] Web UI. Develop a simple and interactive Web UI instead of using apps like `Postman`.
+- [ ] Mobile deployment (Android, IOS, etc.).
+- [ ] Anomaly detection. If there are multiple defects on one image, or perhaps there is a defect which is not in the category.
 
 ## Installation
 
