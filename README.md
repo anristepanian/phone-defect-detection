@@ -30,7 +30,7 @@ pip install -r requirements.txt
 Start
 
 ```commandline
-python code/main.py
+python api/app.py
 ```
 
 and ...
