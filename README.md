@@ -59,6 +59,11 @@ Start
 ```commandline
 python -m api/app
 ```
+> [!WARNING]
+> You have to execute this command in the **_main_** folder
+
+> [!NOTE]
+> You execute exactly **python** -m api/<ins>app</ins> and not **python** -m api/~app.py~
 
 then open any browser and paste http://127.0.0.1:5000/health, you should see next:
 ``` command line
