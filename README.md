@@ -90,6 +90,29 @@ Where you will see the name of an image and the prediction next to it.
 > When loading an image always use _image_ as a key name, then choose _file_
 > When loading a group of images always use _file_ as a key name, then choose _file_
 
+## Testing
+
+In order to test the program:
+1. Open the terminal in the **_main_** folder
+2. Bash _ls_ and you should see next folders and files: api; model; tests; .gitignore; README.ms; requirements.txt
+3. Now you can either immediately execute _pytest_ or create a virtual environment
+4. Bash _python -m venv venv_ then _source venv/bin/activate_ if you're on Linux/mac or _venv\Scripts\Activate.ps1_ if you're on Windows
+5. Upgrade pip: _python -m pip install --upgrade pip_
+6. Install requirements: _pip install -r requirements.txt_
+7. Check the version: _pytest --version_
+8. And finally run _pytest_
+
+You should get:
+```command line
+================== test session starts ==================
+collected 2 items
+
+tests/test_api.py .                            [50%]
+tests/test_predict.py .                        [100%]
+
+================== 2 passed in 0.45s ==================
+```
+
 ## Authors
 
 The project was developed by [Anri Stepanian](https://github.com/anristepanian)
