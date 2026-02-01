@@ -1,13 +1,20 @@
 # Byte-compiled files
 api/__pycache__
-model/.ipynb_checkpoints
+tests/__pycache__
 
 # Unit test reports
 api/.pytest_cache
+tests/.pytest_cache
+.pytest_cache
 
 # PyCharm
 api/.idea
+tests/.idea
+
+#Jupyter
+model/.ipynb_checkpoints
 
 # Dump files
 api/dump
 model/dump
+venv
