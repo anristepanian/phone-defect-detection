@@ -57,7 +57,7 @@ pip install -r requirements.txt
 Start
 
 ```commandline
-python api/app.py
+python -m api/app
 ```
 
 then open any browser and paste http://127.0.0.1:5000/health, you should see next:
