@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ml-api
-        image: anristep/phone-defect-app:latest
+        image: anristep/phone-defect-app:${IMAGE_TAG}
         ports:
         - containerPort: 5000
 
