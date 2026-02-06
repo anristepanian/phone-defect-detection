@@ -1,12 +1,17 @@
 name: CD Pipeline
 
 on:
+  workflow_run:
+    workflows: ["CI - Flask ML API"]
+    types:
+      - completed
   push:
     branches:
       - main
 
 jobs:
   deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
